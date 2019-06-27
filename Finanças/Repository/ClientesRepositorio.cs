@@ -2,6 +2,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -72,6 +73,24 @@ WHERE id = @ID";
             conexao.ConnectionString = CadeiaConexao;
             conexao.Open();
 
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM clientes WHERE nome LIKE @NOME";
+            busca = "%" + busca + "%";
+            comando.Parameters.AddWithValue("NOME", busca);
+
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+            conexao.Close();
+
+            List<Cliente> clientes = new List<Cliente>();
+            for(int i = 0;i < tabela.Rows.Count;i++)
+            {
+                DataRow linha = tabela.Rows[i];
+                Cliente cliente = new Cliente();
+                cliente.Id = Convert.ToInt32(linha["id"]);
+
+            }
         }
     }
 }
