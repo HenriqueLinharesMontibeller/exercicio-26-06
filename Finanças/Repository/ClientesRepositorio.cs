@@ -67,6 +67,7 @@ WHERE id = @ID";
             comando.ExecuteNonQuery();
             conexao.Close();
         }
+
         public List<Cliente> ObterTodos(string busca)
         {
             SqlConnection conexao = new SqlConnection();
@@ -89,8 +90,42 @@ WHERE id = @ID";
                 DataRow linha = tabela.Rows[i];
                 Cliente cliente = new Cliente();
                 cliente.Id = Convert.ToInt32(linha["id"]);
-
+                cliente.Nome = linha["nome"].ToString();
+                cliente.Cpf = linha["Cpf"].ToString();
+                cliente.DataNascimento = Convert.ToDateTime(linha["data_nascimento"]);
+                cliente.Rg = linha["rg"].ToString();
+                clientes.Add(cliente);
             }
+            return clientes;
+        }
+
+        public Cliente ObterPeloId(int id)
+        {
+            SqlConnection conexao = new SqlConnection();
+            conexao.ConnectionString = CadeiaConexao;
+            conexao.Open();
+
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexao;
+            comando.CommandText = "SELECT * FROM clientes WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+
+            if(tabela.Rows.Count == 0)
+            {
+                return null;
+            }
+
+            DataRow linha = tabela.Rows[0];
+            Cliente cliente = new Cliente();
+            cliente.Id = id;
+            cliente.Nome = linha["nome"].ToString();
+            cliente.Cpf = linha["cpf"].ToString();
+            cliente.DataNascimento = Convert.ToDateTime(linha["data_nascimento"]);
+            cliente.Rg = linha["rg"].ToString();
+            return cliente;
         }
     }
 }

@@ -1,0 +1,17 @@
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Principal.exe.config
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Principal.exe
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Principal.pdb
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\View.csprojAssemblyReference.cache
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.Clientes.resources
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.ContasReceber.resources
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.Principal.resources
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.Properties.Resources.resources
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\View.csproj.GenerateResource.cache
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\View.csproj.CoreCompileInputs.cache
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.exe
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\Principal.pdb
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Model.dll
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Repository.dll
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Model.pdb
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\bin\Debug\Repository.pdb
+T:\Documentos\GitHub\exercicio-26-06\Finanças\Principal\obj\Debug\View.csproj.CopyComplete
