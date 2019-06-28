@@ -12,7 +12,7 @@ namespace Repository
 {
     public class ClientesRepositorio
     {
-        public string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Henrique.mdf;Integrated Security=True;Connect Timeout=30";
+        public string CadeiaConexao = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Henrique.mdf;Integrated Security=True;Connect Timeout=30Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=T:\Documentos\Henrique.mdf;Integrated Security=True;Connect Timeout=30";
 
         public void Inserir(Cliente cliente)
         {
